@@ -3,19 +3,14 @@ package main
 import "fmt"
 
 //package scope
-var name string
+var year = 2020
 
 //block scope - must use if you declare
 func main() {
-	var count int
-	var country string
-	var print bool
-	var firstName string
 
-	var miles, age int
-
-	//blank identifier because firstName is in the block but not used
-	_ = firstName
+	count := 10
+	country := "India"
+	var print = true
 
 	fmt.Println(count)
 	fmt.Println(country)
@@ -25,7 +20,7 @@ func main() {
 /*
 multi variable declaration
 func main(
-	
+
 	count int
 	country string
 	print bool
